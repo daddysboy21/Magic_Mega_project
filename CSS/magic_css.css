@@ -104,7 +104,6 @@
 @media (min-width: 451px) {
   .navbar-nav {
     display: flex;
-    position: relative;
     /* ... other styles ... */
   }
 
@@ -117,7 +116,6 @@
 @media (max-width: 450px) {
   .navbar-nav {
     display: none;
-    position: relative;
   }
 
   .navbar-toggler {
@@ -127,10 +125,4 @@
   .collapse.show {
     display: block;
   }
-}
-.logo {
-  /* Adjust the position to align with the navigation bar */
-  position: relative;
-  top: 50%; /* Adjust this value as needed */
-  transform: translateY(-50%);
 }
