@@ -100,6 +100,7 @@
 .nav li:last-child {
   margin-right: 0; /* Removes the right margin from the last list item */
 }
+
 /* CSS for larger screens */
 @media (min-width: 451px) {
   .navbar-nav {
@@ -115,14 +116,15 @@
 /* CSS for smaller screens */
 @media (max-width: 450px) {
   .navbar-nav {
-    display: none;
+    display: none; /* Hide the navigation links initially */
   }
 
   .navbar-toggler {
-    display: block;
+    display: block; /* Display the navbar-toggler button */
   }
 
-  .collapse.show {
-    display: block;
+  .collapse.show .navbar-nav {
+    display: flex; /* Display the navigation links when the navbar-toggler button is clicked */
   }
 }
+
